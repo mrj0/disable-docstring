@@ -21,4 +21,7 @@ class DisableDocstring(Plugin):
             return
 
     def describeTest(self, test):
-        return '(%s) %s' % (test, test.test._testMethodName)
+        return '%s.%s.%s' % (
+            test.test.__class__.__module__,
+            test.test.__class__.__name__,
+            test.test._testMethodName)
