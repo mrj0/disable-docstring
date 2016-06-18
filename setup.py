@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='disabledoc',
-    version='0.2',
+    version='0.2-default',
     description="",
     long_description="""""",
     author='Nat Williams, Kumar McMillan',
